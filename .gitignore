@@ -1,0 +1,84 @@
+# Minecraft Bedrock Edition Development Files
+# Compiled/packaged addon files
+*.mcaddon
+*.mcpack
+*.mcworld
+
+# Temporary build directories
+build/
+dist/
+output/
+
+# macOS System Files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Thumbnails
+Thumbs.db
+
+# Windows System Files
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Editor and IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Node modules (if using any build tools)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Python (if using any Python tools)
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Test directories
+test_worlds/
+test_output/
+
+# Personal development notes
+notes.txt
+TODO.txt
+scratch/
+
+# Texture source files (keep only final PNGs in version control)
+*.psd
+*.ai
+*.xcf
+
+# Audio source files (keep only final audio in version control)
+*.flac
+*.wav
+*.aif
+*.aiff
+
+# Compressed archives (unless intentionally distributing)
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
