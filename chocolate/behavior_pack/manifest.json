@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Behavior pack for Chocolate addon - adds chocolate item with speed effect",
+        "name": "Chocolate Behaviors",
+        "uuid": "f9e67a10-e3df-4cbe-be89-194c74e03634",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 20, 0]
+    },
+    "modules": [
+        {
+            "description": "Chocolate addon behavior files",
+            "type": "data",
+            "uuid": "66515aee-d565-478d-bb16-35816c207946",
+            "version": [1, 0, 0]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "953d9194-2c8e-4555-b6c6-c31d94ad5145",
+            "version": [1, 0, 0]
+        }
+    ]
+}
