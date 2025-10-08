@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.50",
+    "format_version": "1.21.0",
     "minecraft:item": {
         "description": {
             "identifier": "custom:chocolate",
@@ -16,24 +16,29 @@
             "minecraft:use_animation": "eat",
             "minecraft:food": {
                 "nutrition": 4,
-                "saturation_modifier": 0.3,
+                "saturation_modifier": "low",
                 "can_always_eat": false,
-                "on_consume": {
-                    "event": "on_chocolate_consumed"
-                }
+                "using_converts_to": "custom:chocolate"
+            },
+            "minecraft:use_modifiers": {
+                "use_duration": 1.6,
+                "movement_modifier": 0.0
             },
             "minecraft:cooldown": {
                 "category": "chocolate",
                 "duration": 1.0
+            },
+            "minecraft:consume_on_use": {
+                "consume_on_use": true
             }
         },
         "events": {
-            "on_chocolate_consumed": {
-                "run_command": {
-                    "command": [
-                        "effect @s speed 30 1"
-                    ],
-                    "target": "holder"
+            "minecraft:on_use": {
+                "add_mob_effect": {
+                    "effect": "speed",
+                    "target": "holder",
+                    "duration": 30,
+                    "amplifier": 1
                 }
             }
         }
