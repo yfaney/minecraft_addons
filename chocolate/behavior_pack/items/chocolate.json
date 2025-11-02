@@ -1,46 +1,38 @@
 {
-    "format_version": "1.21.0",
-    "minecraft:item": {
-        "description": {
-            "identifier": "custom:chocolate",
-            "menu_category": {
-                "category": "items"
-            }
-        },
-        "components": {
-            "minecraft:max_stack_size": 64,
-            "minecraft:icon": {
-                "texture": "chocolate"
-            },
-            "minecraft:use_duration": 32,
-            "minecraft:use_animation": "eat",
-            "minecraft:food": {
-                "nutrition": 4,
-                "saturation_modifier": "low",
-                "can_always_eat": false,
-                "using_converts_to": "custom:chocolate"
-            },
-            "minecraft:use_modifiers": {
-                "use_duration": 1.6,
-                "movement_modifier": 0.0
-            },
-            "minecraft:cooldown": {
-                "category": "chocolate",
-                "duration": 1.0
-            },
-            "minecraft:consume_on_use": {
-                "consume_on_use": true
-            }
-        },
-        "events": {
-            "minecraft:on_use": {
-                "add_mob_effect": {
-                    "effect": "speed",
-                    "target": "holder",
-                    "duration": 30,
-                    "amplifier": 1
-                }
-            }
-        }
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "custom:chocolate",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.food"
+      }
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "chocolate"
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:hand_equipped": false,
+      "minecraft:use_animation": "eat",
+      "minecraft:use_modifiers": {
+        "use_duration": 1.6,
+        "movement_modifier": 0.35
+      },
+      "minecraft:food": {
+        "cooldown_time": 1,
+        "nutrition": 4,
+        "saturation_modifier": "supernatural",
+        "can_always_eat": true,
+        "effects": [
+          {
+            "name": "speed",
+            "chance": 1,
+            "duration": 30,
+            "amplifier": 1
+          }
+        ]
+      }
     }
+  }
 }

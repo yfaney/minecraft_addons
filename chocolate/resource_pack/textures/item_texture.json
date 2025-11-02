@@ -1,9 +1,9 @@
 {
-    "resource_pack_name": "chocolate_resources",
-    "texture_name": "atlas.items",
-    "texture_data": {
-        "chocolate": {
-            "textures": "textures/items/chocolate"
-        }
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "chocolate": {
+      "textures": "textures/items/chocolate"
     }
+  }
 }
