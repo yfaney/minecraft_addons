@@ -4,7 +4,8 @@
       "Bash(zip:*)",
       "WebSearch",
       "Bash(identify:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\frigh\\\\git\\\\minecraft_addons\" -Recurse -Force | Where-Object { $_.Name -ne \".git\" } | Select-Object FullName)"
     ],
     "deny": [],
     "ask": []
